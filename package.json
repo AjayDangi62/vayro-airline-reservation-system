@@ -1,0 +1,19 @@
+{
+  "name": "airline-reservation-system",
+  "version": "1.0.0",
+  "description": "> **Tagline:** *Your Journey, Simplified.*",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "backend": "mvn spring-boot:run",
+    "frontend": "npm --prefix frontend run dev",
+    "dev": "concurrently -k -n BACKEND,FRONTEND \"npm run backend\" \"npm run frontend\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "concurrently": "^10.0.6"
+  }
+}

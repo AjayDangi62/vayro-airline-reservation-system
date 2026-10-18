@@ -1,0 +1,20 @@
+# ===================================================================
+# Vayro Airline Reservation System - Environment Configuration Template
+# Copy this file to application-local.properties or set environment variables.
+# ===================================================================
+
+server.port=8080
+
+# MySQL Database Settings
+DB_URL=jdbc:mysql://localhost:3306/vayro_db?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+DB_USERNAME=your_db_username
+DB_PASSWORD=your_db_password
+
+# JWT Security Configuration
+# JWT_SECRET must be at least 256 bits (32 bytes) long for HMAC-SHA256
+JWT_SECRET=replace_with_a_long_random_and_secure_jwt_secret_key_minimum_32_characters
+JWT_EXPIRATION_MS=86400000
+
+# Platform Admin Credentials (for initial bootstrapping)
+ADMIN_EMAIL=admin@vayro.com
+ADMIN_PASSWORD=change_this_to_a_strong_password_in_production
